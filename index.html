@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="utf-8">
+    <title>Spørreskjema - Ålesund turistforening </title>
+              
+    <link rel="stylesheet" type="text/css" href="Oblig5.css">
+</head>
+
+
+  <header>
+    <div class="header">
+        <a href="index.html" class="logo">Aalesunds turistforening</a>
+        
+        
+    </div>
+  </header>
+
+
+  <nav>
+  <ul>
+      <div class="nav-left">
+        <li><a href="index.html">Opprett konto</a></li>
+        
+      </div>  
+    
+   </ul>
+  
+    </nav> 
+
+<body>
+    
+  
+  
+  
+
+  <script src="Oblig5.js"></script>
+
+
+  <div class="news1">
+    <h4>Opprett konto hos Aalesunds turistforening</h4>
+
+    <p><strong>Grunnleggende informasjon:</strong></p>
+    
+    <form>
+        Navn: <br>
+        <input type="text" placeholder="Fornavn" name="firstname" required>
+        <input type="text" placeholder="Etternavn" name="lastname" required>
+        <br>
+        <br>
+        Fødselsdato: <br>
+        <input type="date" name="birthdate" min="1900-01-01" max="2001-12-31" required>
+        <br>
+        <br>
+        Kjønn: <br>
+        <input type="radio" name="gender" value="Mann" required> Mann<br>
+        <input type="radio" name="gender" value="Kvinne"> Kvinne<br>
+        <input type="radio" name="gender" value="Annet"> Annet
+        <br>
+        <br>
+        <p><strong>Brukeropplysninger:</strong></p>
+        Brukernavn: <br>
+        <input type="text" placeholder="Brukernavn" id="username" onkeyup="checkUsername(); return false;" required/>
+        <div id="error"></div>
+        <br>
+        <br>
+        Passord: <br>
+        <input name="password" type="password" placeholder="Passord"  id="pass1" onkeyup="checkPass(); return false;" required/>
+        <input name="repeatpassword" type="password" placeholder="Bekreft passord" id="pass2" onkeyup="checkPass(); return false;" required/>
+        <div id="error-nwl"></div>
+        <br>
+        <br>
+        <input type="submit" value="Bekreft">
+    </form>
+
+  </div>
+
+  
+</body>
+
+<footer>
+        <div class="footer-column">
+                <h2>Aalesunds turistforening</h2>
+                <p><strong>Besøksadresse</strong></p>
+                <p>Langelandsveien 1</p>
+                <p>6010 Ålesund</p>
+
+              </div>
+              <div class="footer-column">
+                <br>
+                <br>
+                <br>
+                <p><strong>Kontaktinformasjon</strong></p>
+                <p>Telefon: +47 70 60 50 30</p>
+                <p>E-post: <a href="mailto:aalesundturistforening@gmail.com">
+                        aalesundturistforening@gmail.com</a>.</p>
+              </div>
+</footer>
+
+</html>
